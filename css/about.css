@@ -229,6 +229,8 @@
   background: #dfdce7;
   text-indent: 30px;
   border-radius: 15px;
+  padding: 10px;
+  text-align: justify;
 }
 
 .threed-title {

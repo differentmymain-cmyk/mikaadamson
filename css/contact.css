@@ -35,6 +35,9 @@ p {
   gap: 24px;
   margin-top: 80px;
 }
+.social-links a {
+  width: 100px;
+}
 
 .social-links a {
   color: #1a1a1a;

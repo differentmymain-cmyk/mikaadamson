@@ -48,6 +48,7 @@
   line-height: 1.5;
   margin-bottom: 5px;
   color: #333;
+  text-align: justify;
 }
 p > span {
   color: red;

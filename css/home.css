@@ -101,8 +101,8 @@ h1 {
   color: #0d0614;
   font-size: 50px;
   font-weight: 600;
-  background-color: rgb(37, 184, 37, 0.5);
-  border-radius: 15px;
+  background-color: rgba(94, 93, 189, 0.5);
+  border-radius: 10px;
 }
 .service-card-mod {
   width: 600px; /* твой размер */
@@ -257,7 +257,60 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
+.testimonial-container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.testimonial-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.testimonial-item.active {
+  opacity: 1;
+  position: relative;
+}
+
+.testimonial-prev,
+.testimonial-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.testimonial-prev {
+  left: -90px;
+}
+
+.testimonial-next {
+  right: -90px;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 /* scroll */
 html,
 body {
