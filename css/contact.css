@@ -1,3 +1,8 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .main {
   height: 120px;
 }
@@ -168,3 +173,4 @@ button:hover {
     padding: 32px 24px;
   }
 }
+
