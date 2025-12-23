@@ -5,7 +5,7 @@
   height: calc(100vh - 120px); /* вычитаем высоту хедера */
   gap: 60px;
 }
-
+ 
 .hero-text {
   flex: 1;
   transform: translateY(20px);
@@ -327,3 +327,4 @@ body {
 footer {
   scroll-snap-align: start;
 }
+
