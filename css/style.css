@@ -1,0 +1,111 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  background: #f2f0fe;
+  color: #0c1a2a;
+  min-width: 1200px;
+}
+
+/* BUTTONS */
+.btn {
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 36px;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #0f1f38;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #223b67;
+}
+
+/* Плашки */
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(12, 26, 42, 0.1);
+  border-radius: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+a {
+  cursor: pointer;
+}
+
+/* Header*/
+
+.main {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  padding: 24px 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 600;
+  font-size: 32px;
+}
+.nav a {
+  color: #0c1a2a;
+  font-weight: 500;
+  margin: 0 16px;
+  transition: opacity 0.2s ease;
+  font-size: 28px;
+}
+.nav a:hover {
+  opacity: 0.6;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.icons a img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.icons a img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* ---- FREELANCE ---- */
+
+.freelance {
+  background-color: #071526;
+  color: #fff;
+  padding: 80px 10%;
+  margin-top: auto;
+}
+
+.freelance-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.freelance-text {
+  font-size: 25px;
+}

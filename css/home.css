@@ -1,0 +1,276 @@
+.hero {
+  display: flex;
+  align-items: center; /* по вертикали */
+  justify-content: center; /* по горизонтали */
+  height: calc(100vh - 120px); /* вычитаем высоту хедера */
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+.intro {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease 0.3s forwards;
+}
+
+.hero-image img {
+  width: 620px;
+  border-radius: 148px;
+  border: 2px solid #b8c0cc;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin: 0 0 24px;
+  font-weight: 700;
+}
+
+.btn-mod {
+  width: 280px;
+  display: inline-block;
+  transition: transform 0.2s ease, background 0.2s ease;
+  padding: 20px 50px;
+  font-size: 25px;
+}
+
+/* Second */
+
+.services {
+  height: 100vh;
+  background: #0d0614;
+  color: #ffffff;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 48px;
+  width: 600px;
+  height: 500px;
+  background: rgba(182, 66, 62, 0.05);
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.service-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.service-card:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 48px;
+  transition: transform 0.4s ease;
+}
+.service-card:hover img {
+  transform: scale(1.05);
+}
+.service-card h3 {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0d0614;
+  font-size: 50px;
+  font-weight: 600;
+  background-color: rgb(37, 184, 37, 0.5);
+  border-radius: 15px;
+}
+.service-card-mod {
+  width: 600px; /* твой размер */
+  height: 500px;
+  background: #1b1721; /* фон как в примере */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  grid-template-rows: repeat(2, 1fr); /* 2 строки */
+  gap: 5px;
+}
+.service-card-mod img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* чтобы картинка не деформировалась */
+  border-radius: 1px;
+}
+.section-tag-services {
+  margin-top: 20px;
+  background: #071526;
+  margin-bottom: 100px;
+}
+
+/* work */
+
+.work {
+  height: 100vh;
+  background: #e8ebe8;
+  text-align: center;
+}
+
+.work h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-item {
+  width: 260px;
+  height: 360px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #c6cacc;
+  transform: translateY(30px);
+
+  animation: fadeInUp 1s ease forwards;
+}
+
+.work-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-tag-work {
+  margin-top: 15px;
+}
+
+/* ---- ABOUT ---- */
+
+.about {
+  background: url("../img/image.png") no-repeat center/cover;
+  height: 100vh;
+  color: #fff;
+  padding: 100px 10%;
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 520px;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+.about-text {
+  font-size: 35px;
+}
+.section-tag-about {
+  background: #b8c0cc;
+  color: #0d0614;
+}
+/* ---- TESTIMONIALS ---- */
+.footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials {
+  background-color: #f0f2f1;
+  padding: 10px 10%;
+  text-align: center;
+}
+.section-tag-mod {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+.testimonials-header {
+  font-size: 25px;
+}
+
+/* ---- FREELANCE ---- */
+
+.testimonial-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.testimonial_comment {
+  font-size: 35px;
+}
+.author {
+  padding-top: 15px;
+  font-size: 25px;
+  text-align: right;
+}
+.testimonial_comment {
+  padding-top: 100px;
+}
+.section-tag-footer {
+  margin-top: 20px;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+/* scroll */
+html,
+body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.main,
+.services,
+.work,
+.about,
+footer {
+  scroll-snap-align: start;
+}

@@ -1,0 +1,154 @@
+.main {
+  height: 120px;
+  flex-shrink: 0;
+}
+.container {
+  flex: 1; /* 🔥 КЛЮЧЕВОЕ */
+}
+/* Gallery*/
+.gallery-section {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.gallery-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #8e98a8;
+  background: #e7ebef;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active {
+  background: #1a2a4a;
+  color: white;
+  border-color: #1a2a4a;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-auto-flow: dense;
+}
+.gallery-grid .item {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 3px solid #d3d7df;
+}
+
+.gallery-grid .item:hover {
+  transform: scale(1.2) translateY(-10px);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  border-color: #a8b2c9;
+}
+
+.item {
+  width: 230px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 3px solid #d3d7df;
+
+  /* Плавное исчезновение и подъём */
+  transition: opacity 0.35s ease, transform 0.35s ease, max-height 0.35s ease,
+    margin 0.35s ease;
+
+  max-height: 600px; /* высота твоих рисунков */
+  margin: 0;
+}
+
+.item.hide {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  max-height: 0;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+/* ================== ЛАЙТБОКС (полноэкранный просмотр) ================== */
+.lightbox {
+  display: none; /* скрыт по умолчанию */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(7, 15, 26, 0.94);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.lightbox.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  object-fit: contain;
+  animation: zoomIn 0.5s ease;
+}
+
+/* Кнопка закрытия */
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+/* Анимация появления */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
