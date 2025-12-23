@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css" />
   </head>
-  <body> 
+  <body>
     <!-- Hero-->
     <main class="main">
       <header class="header">
-         <a href="./index.html">
+        <a href="./index.html">
           <div class="logo">Mika Adamson</div>
         </a>
         <nav class="nav">
@@ -37,7 +37,7 @@
             title="Twitch"
             target="_blank"
           >
-            <img src="img/twitch.png" alt="" alt="Twitch" />
+            <img src="./img/twitch.png" alt="" alt="Twitch" />
           </a>
         </div>
       </header>
@@ -56,7 +56,7 @@
           >
         </div>
         <div class="hero-image">
-          <img src="img/picture.jpg" alt="Mika Adamson" />
+          <img src="./img/picture.jpg" alt="Mika Adamson" />
         </div>
       </div>
     </main>
@@ -66,22 +66,22 @@
       <h2 class="section-tag section-tag-services">Заказать можно</h2>
       <div class="services-grid">
         <div class="service-card">
-          <a href="/price.html">
-            <img src="img/picture.jpg" alt="Art" />
+          <a href="./price.html">
+            <img src="./img/picture.jpg" alt="Art" />
             <h3>Арты</h3>
           </a>
         </div>
 
         <div class="service-card service-card-mod">
-          <img src="img/smile1.png" alt="Smile" />
-          <img src="img/smile2.png" alt="Smile" />
-          <img src="img/smile3.png" alt="Smile" />
-          <img src="img/smile4.png" alt="Smile" />
+          <img src="./img/smile1.png" alt="Smile" />
+          <img src="./img/smile2.png" alt="Smile" />
+          <img src="./img/smile3.png" alt="Smile" />
+          <img src="./img/smile4.png" alt="Smile" />
           <h3>Смайлы и значки</h3>
         </div>
 
         <div class="service-card">
-          <a href="/price.html">
+          <a href="./price.html">
             <img src="img/overview .jpg" alt="overview" />
             <h3>Оформление</h3>
           </a>
@@ -95,28 +95,44 @@
       <h2>Мое портфолио</h2>
       <div class="work-grid">
         <div class="work-item">
-          <img src="img/picture/1.webp" alt="Illustration 1" />
+          <a href="./gallery.html"
+            ><img src="./img/picture/1.webp" alt="Illustration 1"
+          /></a>
         </div>
         <div class="work-item">
-          <img src="img/picture/2.webp" alt="Illustration 2" />
+          <a href="./gallery.html">
+            <img src="./img/picture/2.webp" alt="Illustration 2"
+          /></a>
         </div>
         <div class="work-item">
-          <img src="img/picture/3.webp" alt="Illustration 3" />
+          <a href="./gallery.html">
+            <img src="./img/picture/3.webp" alt="Illustration 3"
+          /></a>
         </div>
         <div class="work-item">
-          <img src="img/picture/4.webp" alt="Illustration 4" />
+          <a href="./gallery.html">
+            <img src="./img/picture/4.webp" alt="Illustration 4"
+          /></a>
         </div>
         <div class="work-item">
-          <img src="img/picture/5.webp" alt="Illustration 5" />
+          <a href="./gallery.html">
+            <img src="./img/picture/5.webp" alt="Illustration 5"
+          /></a>
         </div>
         <div class="work-item">
-          <img src="img/picture/6.webp" alt="Illustration 6" />
+          <a href="./gallery.html">
+            <img src="./img/picture/6.webp" alt="Illustration 6"
+          /></a>
         </div>
         <div class="work-item">
-          <img src="img/picture/7.webp" alt="Illustration 7" />
+          <a href="./gallery.html">
+            <img src="./img/picture/7.webp" alt="Illustration 7"
+          /></a>
         </div>
         <div class="work-item">
-          <img src="img/picture/16.webp" alt="Illustration 8" />
+          <a href="./gallery.html">
+            <img src="./img/picture/16.webp" alt="Illustration 8"
+          /></a>
         </div>
       </div>
     </section>
@@ -125,7 +141,7 @@
     <section class="about">
       <div class="about-container">
         <div class="about-image">
-          <img src="img/picture.jpg" alt="Mika Adamson за работой" />
+          <img src="./img/picture.jpg" alt="Mika Adamson за работой" />
         </div>
         <div class="about-text">
           <p class="section-tag section-tag-about">Обо мне</p>
@@ -145,26 +161,51 @@
     </section>
     <!-- Testimonials Section -->
     <footer class="footer">
-      <section class="testimonials">
+      <div class="testimonials">
         <div class="testimonials-header">
           <p class="section-tag section-tag-footer">Отзывы</p>
           <h2>Что говорят заказчики</h2>
         </div>
 
-        <div class="testimonial">
-          <div class="testimonial-image">
-            <img src="img/picture/5.webp" alt="Фото клиента" />
+        <div class="testimonial-container">
+          <button class="testimonial-prev">&#10094;</button>
+
+          <div class="testimonial-item active">
+            <div class="testimonial-image">
+              <img src="./img/picture/1.webp" alt="Фото клиента" />
+            </div>
+            <div class="testimonial_comment">
+              Очень красивый рисунок, нарисованый с душой. Обязательно в будущем
+              попрошу еще рисунок
+              <div class="author">мелодия фокс</div>
+            </div>
           </div>
 
-          <div class="testimonial-text">
-            <p class="testimonial_comment">
-              Очень красивый рисунок, нарисованый с душой.<br />Обязательно в
-              будущем попрошу еще рисунок
-            </p>
-            <p class="author"><strong>Зритель</strong></p>
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img src="./img/picture/2.webp" alt="Фото клиента" />
+            </div>
+            <div class="testimonial_comment">
+              Очень красивый рисунок, нарисованый с душой. Обязательно в будущем
+              попрошу еще рисунок
+              <div class="author">мелодия фокс</div>
+            </div>
           </div>
+
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <img src="./img/picture/3.webp" alt="Фото клиента" />
+            </div>
+            <div class="testimonial_comment">
+              Очень красивый рисунок, нарисованый с душой. Обязательно в будущем
+              попрошу еще рисунок
+              <div class="author">мелодия фокс</div>
+            </div>
+          </div>
+
+          <button class="testimonial-next">&#10095;</button>
         </div>
-      </section>
+      </div>
       <section class="freelance">
         <div class="freelance-container">
           <div class="freelance-text">
@@ -182,12 +223,12 @@
             >
               Написать
             </a>
-            <a href="/price.html" class="btn btn-primary"> Прайс </a>
+            <a href="./price.html" class="btn btn-primary"> Прайс </a>
           </div>
         </div>
       </section>
     </footer>
+    <script src="./js/home.js"></script>
   </body>
 </html>
 `
-
