@@ -58,7 +58,6 @@ p {
 }
 
 .right img {
-  
   height: 500px;
   border-radius: 50%;
   min-height: 500px;
@@ -167,6 +166,7 @@ button:hover {
     padding: 32px 24px;
   }
 }
+
 
 
 
