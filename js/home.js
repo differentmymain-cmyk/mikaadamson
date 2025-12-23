@@ -9,7 +9,7 @@ function showTestimonial(index) {
   testimonials.forEach((item, i) => {
     item.classList.toggle("active", i === index);
   });
-}
+} 
 
 // Следующий отзыв
 function nextTestimonial() {
@@ -45,5 +45,6 @@ function resetAutoSlide() {
 
 // Инициализация
 showTestimonial(current);
+
 
 
