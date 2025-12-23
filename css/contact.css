@@ -66,8 +66,8 @@ p {
   height: 36px;
 }
 
-.right {
-  background: url("./img/123.jpg") center/cover no-repeat;
+.right img {
+  
   height: 500px;
   border-radius: 50%;
   min-height: 500px;
@@ -176,4 +176,5 @@ button:hover {
     padding: 32px 24px;
   }
 }
+
 
