@@ -67,7 +67,7 @@ p {
 }
 
 .right {
-  background: url("/img/123.jpg") center/cover no-repeat;
+  background: url("./img/123.jpg") center/cover no-repeat;
   height: 500px;
   border-radius: 50%;
   min-height: 500px;
@@ -176,3 +176,4 @@ button:hover {
     padding: 32px 24px;
   }
 }
+
