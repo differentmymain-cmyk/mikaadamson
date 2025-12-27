@@ -3,7 +3,7 @@
   flex-shrink: 0;
 }
 .container {
-  flex: 1; /* 🔥 КЛЮЧЕВОЕ */
+  flex: 1;
 }
 /* Gallery*/
 .gallery-section {
@@ -13,7 +13,7 @@
 }
 
 .gallery-title {
-  font-size: 40px;
+  font-size: 72px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -29,14 +29,15 @@
   padding: 8px 20px;
   border-radius: 20px;
   border: 1px solid #8e98a8;
-  background: #e7ebef;
+  background: var(--bg-color);
   cursor: pointer;
   transition: 0.3s;
+  font-size: 20px;
 }
 
 .filter-btn.active {
   background: #1a2a4a;
-  color: white;
+  color: var(--bg-color-btn-text);
   border-color: #1a2a4a;
 }
 
@@ -44,7 +45,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 25px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   grid-auto-flow: dense;
 }

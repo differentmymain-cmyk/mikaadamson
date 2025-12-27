@@ -1,11 +1,14 @@
 .hero {
+  max-width: 1200px;
   display: flex;
   align-items: center; /* по вертикали */
   justify-content: center; /* по горизонтали */
-  height: calc(100vh - 120px); /* вычитаем высоту хедера */
-  gap: 60px;
+  height: 100vh; /* вычитаем высоту хедера */
+  gap: 180px;
+  margin: 0 auto;
+  padding-bottom: 150px;
 }
- 
+
 .hero-text {
   flex: 1;
   transform: translateY(20px);
@@ -13,7 +16,7 @@
 }
 .intro {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 46px;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
 }
@@ -26,33 +29,33 @@
 }
 
 .hero-image img {
-  width: 620px;
+  width: 820px;
   border-radius: 148px;
   border: 2px solid #b8c0cc;
   object-fit: cover;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 72px;
   line-height: 1.1;
   margin: 0 0 24px;
   font-weight: 700;
 }
 
 .btn-mod {
-  width: 280px;
+  width: 380px;
   display: inline-block;
   transition: transform 0.2s ease, background 0.2s ease;
-  padding: 20px 50px;
-  font-size: 25px;
+  padding: 30px 30px;
+  font-size: 36px;
 }
 
 /* Second */
 
 .services {
   height: 100vh;
-  background: #0d0614;
-  color: #ffffff;
+  background: var(--bg-color-home2);
+  color: var(--bg-color-btn-text);
   text-align: center;
 }
 
@@ -60,7 +63,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 60px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -69,10 +72,23 @@ h1 {
   overflow: hidden;
   border-radius: 48px;
   width: 600px;
-  height: 500px;
-  background: rgba(182, 66, 62, 0.05);
+  height: 600px;
   transform: translateY(30px);
   animation: fadeInUp 1s ease forwards;
+}
+.service-card-mod {
+  width: 600px; /* твой размер */
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  grid-template-rows: repeat(2, 1fr); /* 2 строки */
+  gap: 5px;
+}
+.service-card-mod img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* чтобы картинка не деформировалась */
+  border-radius: 1px;
 }
 .service-card:nth-child(1) {
   animation-delay: 0.1s;
@@ -98,30 +114,16 @@ h1 {
   bottom: 28px;
   left: 50%;
   transform: translateX(-50%);
-  color: #0d0614;
-  font-size: 50px;
+  color: var(--bg-color-btn-text);
+  font-size: 62px;
   font-weight: 600;
   background-color: rgba(94, 93, 189, 0.5);
   border-radius: 10px;
 }
-.service-card-mod {
-  width: 600px; /* твой размер */
-  height: 500px;
-  background: #1b1721; /* фон как в примере */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
-  grid-template-rows: repeat(2, 1fr); /* 2 строки */
-  gap: 5px;
-}
-.service-card-mod img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* чтобы картинка не деформировалась */
-  border-radius: 1px;
-}
+
 .section-tag-services {
   margin-top: 20px;
-  background: #071526;
+  background: var(--bg-color-tag2);
   margin-bottom: 100px;
 }
 
@@ -129,7 +131,6 @@ h1 {
 
 .work {
   height: 100vh;
-  background: #e8ebe8;
   text-align: center;
 }
 
@@ -141,15 +142,15 @@ h1 {
 .work-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  max-width: 1200px;
+  gap: 20px;
+  max-width: 1600px;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
 
 .work-item {
-  width: 260px;
+  width: 360px;
   height: 360px;
   border-radius: 40px;
   overflow: hidden;
@@ -173,7 +174,7 @@ h1 {
 .about {
   background: url("../img/image.png") no-repeat center/cover;
   height: 100vh;
-  color: #fff;
+  color: var(--bg-about-answer);
   padding: 100px 10%;
   position: relative;
 }
@@ -187,28 +188,22 @@ h1 {
 }
 
 .about-image img {
-  width: 520px;
+  width: 720px;
   height: auto;
   border-radius: 30px;
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 .about-text {
-  font-size: 35px;
+  font-size: 62px;
 }
 .section-tag-about {
-  background: #b8c0cc;
-  color: #0d0614;
+  background: var(--border-aboutimage);
+  color: var(--body-color-text);
 }
 /* ---- TESTIMONIALS ---- */
-.footer {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
 .testimonials {
-  background-color: #f0f2f1;
   padding: 10px 10%;
   text-align: center;
 }
@@ -222,6 +217,7 @@ h1 {
   justify-content: center;
   gap: 150px;
   flex-wrap: wrap;
+  max-width: 1600px;
 }
 .testimonials-header {
   font-size: 25px;
@@ -230,18 +226,18 @@ h1 {
 /* ---- FREELANCE ---- */
 
 .testimonial-image img {
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 .testimonial_comment {
-  font-size: 35px;
+  font-size: 62px;
 }
 .author {
   padding-top: 15px;
-  font-size: 25px;
+  font-size: 45px;
   text-align: right;
 }
 .testimonial_comment {
@@ -259,7 +255,7 @@ body {
 }
 .testimonial-container {
   position: relative;
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -274,7 +270,7 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease;
   display: flex;
-  gap: 30px;
+  gap: 100px;
   align-items: flex-start;
 }
 
@@ -300,11 +296,11 @@ body {
 }
 
 .testimonial-prev {
-  left: -90px;
+  left: -290px;
 }
 
 .testimonial-next {
-  right: -90px;
+  right: -290px;
 }
 
 .testimonial-prev:hover,
@@ -320,7 +316,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.main,
+.header,
 .services,
 .work,
 .about,
@@ -328,3 +324,20 @@ footer {
   scroll-snap-align: start;
 }
 
+/* --- Адаптив для больших экранов до 2560px --- */
+@media (max-width: 1920px) {
+  .about-text {
+    font-size: 42px;
+  }
+  .testimonial-prev {
+    left: -170px;
+  }
+
+  .testimonial-next {
+    right: -110px;
+  }
+  .testimonial-image img {
+    width: 350px;
+    height: 350px;
+  }
+}

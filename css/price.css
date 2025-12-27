@@ -3,7 +3,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
 }
@@ -18,7 +18,7 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: #f0f0f0;
+  background: var(--bg-color-text-price2);
   padding: 12px 24px;
   border-radius: 30px;
   font-size: 32px;
@@ -27,12 +27,13 @@
 .dots span {
   width: 12px;
   height: 12px;
-  background: #000;
+  background: var(--body-color-text);
   border-radius: 50%;
   display: inline-block;
 }
 .url {
-  font-size: 50px;
+  font-size: 72px;
+  color: var(--bg-color-text-price);
 }
 
 /* Заголовки */
@@ -43,18 +44,18 @@
 }
 
 .subtitle {
-  font-size: 23px;
+  font-size: 36px;
   text-indent: 30px;
   line-height: 1.5;
   margin-bottom: 5px;
-  color: #333;
+  color: --body-color-text;
   text-align: justify;
 }
 p > span {
   color: red;
 }
-#subtitle-mod {
-  font-size: 30px;
+.subtitle-mod {
+  font-size: 50px;
 }
 /* Основной блок слева-справа */
 .price-block {
@@ -71,78 +72,6 @@ p > span {
   max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-}
-
-.price-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  min-width: 340px;
-}
-
-.price-item {
-  background: #f8f8f8;
-  padding: 24px 32px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  height: 500px;
-  margin-top: 15px;
-  margin-bottom: 37px;
-}
-
-.price-item h3 {
-  font-size: 40px;
-  margin-bottom: 8px;
-}
-
-.price-item .price {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-/* Подсветка коммерции */
-.price-item.highlight {
-  background: #000;
-  color: #fff;
-}
-
-/* Нижний текст */
-.footer-text {
-  font-size: 36px;
-  text-align: center;
-  line-height: 1.6;
-  color: #444;
-}
-
-/* Адаптив */
-@media (max-width: 900px) {
-  .price-block {
-    flex-direction: column;
-    align-items: center;
-  }
-  .title {
-    font-size: 70px;
-  }
-  .subtitle {
-    font-size: 28px;
-  }
-  .price-item h3 {
-    font-size: 34px;
-  }
-  .price-item .price {
-    font-size: 42px;
-  }
-}
-
-/* Новый прайс-блок с галереей слева */
-.price-block {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 100px;
-  flex-wrap: nowrap;
-  margin-bottom: 120px;
-  padding: 0 20px;
 }
 
 .price-gallery {
@@ -171,8 +100,8 @@ p > span {
 
 .gallery-label {
   margin-top: 16px;
-  font-size: 28px;
-  color: #333;
+  font-size: 52px;
+  color: var(--body-color-text);
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -189,36 +118,4 @@ p > span {
   gap: 40px;
   min-width: 420px;
   margin-top: 40px; /* лёгкая подгонка под центрирование подписей */
-}
-
-/* Адаптив: на планшетах и ниже — колонкой */
-@media (max-width: 1100px) {
-  .price-block {
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-  }
-
-  .price-list {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .price-gallery {
-    order: -1; /* галерея сверху */
-  }
-}
-
-@media (max-width: 600px) {
-  .gallery-item img {
-    width: 100%;
-  }
-
-  .price-item h3 {
-    font-size: 32px;
-  }
-
-  .price-item .price {
-    font-size: 40px;
-  }
 }
