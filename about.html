@@ -18,46 +18,46 @@
 
     <!-- наш 3D-блок -->
   </head>
-  <body> 
-    <main class="main">
-      <header class="header">
-        <a href="./index.html">
-          <div class="logo">Mika Adamson</div>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="logo">Mika Adamson</a>
+      <nav class="nav">
+        <a href="./index.html">Главная</a>
+        <a href="./about.html">Обо мне</a>
+        <a href="./gallery.html">Галерея</a>
+        <a href="./price.html">Прайс</a>
+        <a href="./contact.html" class="active">Контакты</a>
+      </nav>
+      <div class="icons">
+        <a href="https://t.me/q_AshA_p" title="Telegram" target="_blank">
+          <img src="./img/telegram.png" alt="Telegram" />
         </a>
-        <nav class="nav">
-          <a href="./index.html">Главная</a>
-          <a href="./about.html">Обо мне</a>
-          <a href="./gallery.html">Галерея</a>
-          <a href="./price.html">Прайс</a>
-          <a href="./contact.html">Контакты</a>
-        </nav>
-        <div class="icons">
-          <a href="t.me/mika_adamson" title="Telegram" target="_blank"
-            ><img src="./img/telegram.png" alt="Telegram"
-          /></a>
-          <a
-            href="https://www.twitch.tv/q_asha_p"
-            title="Twitch"
-            target="_blank"
-            ><img src="./img/twitch.png" alt="Twitch"
-          /></a>
-        </div>
-      </header>
+        <a href="https://www.twitch.tv/q_asha_p" title="Twitch" target="_blank">
+          <img src="./img/twitch.png" alt="Twitch" />
+        </a>
+        <button
+          id="theme-toggle"
+          class="theme-btn"
+          aria-label="Переключить тему"
+        >
+          <img src="./img/sun.png" alt="" id="theme-icon" />
+        </button>
+      </div>
+    </header>
+    <section class="about-section">
+      <h2 class="about-title">Художник <br />в Procreate</h2>
 
-      <section class="about-section">
-        <h2 class="about-title">Художник <br />в Procreate</h2>
+      <div class="about-image-wrapper">
+        <img src="./img/foto.jpg" alt="Artist" />
+      </div>
 
-        <div class="about-image-wrapper">
-          <img src="./img/about/avatar.jpg" alt="Artist" />
-        </div>
+      <p class="about-text">
+        Приветствую тебя во вкладке «Обо мне»! Здесь я хочу раскрыться перед
+        тобой не только как художник, но и как человек. Этот раздел оформлен в
+        формате «вопрос–ответ» — честно, по делу и с душой.
+      </p>
+    </section>
 
-        <p class="about-text">
-          Приветствую тебя во вкладке «Обо мне»! Здесь я хочу раскрыться перед
-          тобой не только как художник, но и как человек. Этот раздел оформлен в
-          формате «вопрос–ответ» — честно, по делу и с душой.
-        </p>
-      </section>
-    </main>
     <section class="qa-section">
       <div class="qa-container">
         <div class="qa-column">
@@ -317,13 +317,12 @@
     <!-- ===== ПРОЦЕСС РАБОТЫ ===== -->
     <section class="process-section">
       <div class="process-container">
-        <div class="section-tag">Моя работа</div>
-        <h2 class="process-title">Мой процесс рисования</h2>
+        <div class="section-tag">Мой процесс рисования</div>
 
         <div class="process-grid">
           <div class="process-item">
             <div class="process-icon">
-              <img src="./icons/sketch.svg" alt="" />
+              <img src="./img/pencil.png" alt="" />
             </div>
             <h3>Скетч</h3>
             <p>
@@ -334,7 +333,7 @@
 
           <div class="process-item">
             <div class="process-icon">
-              <img src="./icons/refinement.svg" alt="" />
+              <img src="./img/palitra.png" alt="" />
             </div>
             <h3>Цвет</h3>
             <p>Процесс в цвете</p>
@@ -342,7 +341,7 @@
 
           <div class="process-item">
             <div class="process-icon">
-              <img src="./icons/final.svg" alt="" />
+              <img src="./img/final.png" alt="" />
             </div>
             <h3>Финал</h3>
             <p>
@@ -375,6 +374,6 @@
 
     <!-- JS для 3D-карусели (один раз в конце) -->
     <script src="./js/threed.js"></script>
+    <script src="./js/dark.js"></script>
   </body>
 </html>
-

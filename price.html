@@ -13,35 +13,34 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/price.css" />
-  </head>  
+  </head>
   <body>
     <!-- Hero-->
-    <main class="main">
-      <header class="header">
-        <a href="./index.html">
-          <div class="logo">Mika Adamson</div>
+    <header class="header">
+      <a href="./index.html" class="logo">Mika Adamson</a>
+      <nav class="nav">
+        <a href="./index.html">Главная</a>
+        <a href="./about.html">Обо мне</a>
+        <a href="./gallery.html">Галерея</a>
+        <a href="./price.html">Прайс</a>
+        <a href="./contact.html" class="active">Контакты</a>
+      </nav>
+      <div class="icons">
+        <a href="https://t.me/q_AshA_p" title="Telegram" target="_blank">
+          <img src="./img/telegram.png" alt="Telegram" />
         </a>
-        <nav class="nav">
-          <a href="./index.html">Главная</a>
-          <a href="./about.html">Обо мне</a>
-          <a href="./gallery.html">Галерея</a>
-          <a href="./price.html">Прайс</a>
-          <a href="./contact.html">Контакты</a>
-        </nav>
-        <div class="icons">
-          <a href="https://t.me/mika_adamson" title="Telegram" target="_blank">
-            <img src="./img/telegram.png" alt="" alt="Telegram" />
-          </a>
-          <a
-            href="https://www.twitch.tv/q_asha_p"
-            title="Twitch"
-            target="_blank"
-          >
-            <img src="./img/twitch.png" alt="" alt="Twitch" />
-          </a>
-        </div>
-      </header>
-    </main>
+        <a href="https://www.twitch.tv/q_asha_p" title="Twitch" target="_blank">
+          <img src="./img/twitch.png" alt="Twitch" />
+        </a>
+        <button
+          id="theme-toggle"
+          class="theme-btn"
+          aria-label="Переключить тему"
+        >
+          <img src="./img/sun.png" alt="" id="theme-icon" />
+        </button>
+      </div>
+    </header>
     <section class="container">
       <!-- Шапка как на скриншоте с iPad -->
       <div class="shapka">
@@ -49,10 +48,12 @@
           <div class="url">Прайс :3</div>
         </div>
       </div>
-      <p class="subtitle" id="subtitle-mod">Арт по плечи ~750р.</p>
-      <p class="subtitle" id="subtitle-mod">Арт по пояс ~900р.</p>
-      <p class="subtitle" id="subtitle-mod">Арт по бёдра ~1100р.</p>
-      <p class="subtitle" id="subtitle-mod">Арт в полный рост ~1400р</p>
+      <p class="subtitle subtitle-mod">Арт по плечи ~750р.</p>
+      <p class="subtitle subtitle-mod">Арт по пояс ~900р.</p>
+      <p class="subtitle subtitle-mod">Арт по бёдра ~1100р.</p>
+      <p class="subtitle subtitle-mod">Арт в полный рост ~1400р</p>
+      <p class="subtitle subtitle-mod">Смайлы от 1400р</p>
+      <p class="subtitle subtitle-mod">Оформление от 1400р</p>
       <!-- Подзаголовок-текст -->
       <p class="subtitle">
         Если арт имеет простой фон - вы ничего не платите, если нужно будет
@@ -78,14 +79,17 @@
         Ваше время и, соответственно, моё время с:
       </p>
       <p class="subtitle">
-        Также я рисую оформление на Твич канал. Смайлики, значки подписок,
-        аватарка, обложка. Рисую всё вместе, либо по отдельности, как вам это
-        нужно будет. Есть примеры работ (примеры значков на сабки) в альбоме
-        "Оформление". Здесь цены обговороченые, так как учитывается сложность
-        значка/смайлика.
+        Также я рисую
+        <span>
+          оформление на Твич канал. Смайлики, значки подписок, аватарка,
+          обложка.</span
+        >
+        Рисую всё вместе, либо по отдельности, как вам это нужно будет. Есть
+        примеры работ (примеры значков на сабки) в альбоме "Оформление". Здесь
+        цены обговороченые, так как учитывается сложность значка/смайлика.
       </p>
       <p class="subtitle">
-        `Оплата идёт 50% после согласования скетча и остальные 50% после
+        Оплата идёт 50% после согласования скетча и остальные 50% после
         завершения работы - всё честно. Либо же если Вы не переживаете,
         доверитесь мне - сумму можно скинуть и сразу. Денюшка возврату не
         подлежит. Будьте внимательны.
@@ -150,19 +154,19 @@
     <section class="price-block container">
       <div class="price-gallery">
         <div class="gallery-item">
-          <img src="./img/image.png" alt="" />
+          <img src="./img/oform/oform.webp" alt="" />
         </div>
 
         <div class="gallery-item">
-          <img src="./img/image.png" alt="" />
+          <img src="./img/oform/oform5.webp" alt="" />
         </div>
 
         <div class="gallery-item">
-          <img src="./img/image.png" alt="" />
+          <img src="./img/oform/oform4.webp" alt="" />
         </div>
 
         <div class="gallery-item">
-          <img src="./img/image.png" alt="" />
+          <img src="./img/oform/oform1.webp" alt="" />
         </div>
       </div>
     </section>
@@ -185,6 +189,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/dark.js"></script>
   </body>
 </html>
-

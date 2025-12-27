@@ -16,50 +16,49 @@
   </head>
   <body>
     <!-- Hero-->
-    <main class="main">
-      <header class="header">
-        <a href="./index.html">
-          <div class="logo">Mika Adamson</div>
+    <header class="header">
+      <a href="./index.html" class="logo">Mika Adamson</a>
+      <nav class="nav">
+        <a href="./index.html">Главная</a>
+        <a href="./about.html">Обо мне</a>
+        <a href="./gallery.html">Галерея</a>
+        <a href="./price.html">Прайс</a>
+        <a href="./contact.html" class="active">Контакты</a>
+      </nav>
+      <div class="icons">
+        <a href="https://t.me/q_AshA_p" title="Telegram" target="_blank">
+          <img src="./img/telegram.png" alt="Telegram" />
         </a>
-        <nav class="nav">
-          <a href="./index.html">Главная</a>
-          <a href="./about.html">Обо мне</a>
-          <a href="./gallery.html">Галерея</a>
-          <a href="./price.html">Прайс</a>
-          <a href="./contact.html">Контакты</a>
-        </nav>
-        <div class="icons">
-          <a href="https://t.me/q_AshA_p" title="Telegram" target="_blank">
-            <img src="img/telegram.png" alt="" alt="Telegram" />
-          </a>
-          <a
-            href="https://www.twitch.tv/q_asha_p"
-            title="Twitch"
-            target="_blank"
-          >
-            <img src="./img/twitch.png" alt="" alt="Twitch" />
-          </a>
-        </div>
-      </header>
-      <div class="hero">
-        <div class="hero-text">
-          <p class="intro">Рада приветствовать! Я Мика и здесь:</p>
-          <h1>
-            Я создаю иллюстрации,<br />
-            где тишина - становится атмосферой,<br />персонажи живыми
-          </h1>
-          <a
-            href="https://t.me/q_AshA_p"
-            class="btn btn-primary btn-mod"
-            target="_blank"
-            >Заказать рисунок</a
-          >
-        </div>
-        <div class="hero-image">
-          <img src="./img/picture.jpg" alt="Mika Adamson" />
-        </div>
+        <a href="https://www.twitch.tv/q_asha_p" title="Twitch" target="_blank">
+          <img src="./img/twitch.png" alt="Twitch" />
+        </a>
+        <button
+          id="theme-toggle"
+          class="theme-btn"
+          aria-label="Переключить тему"
+        >
+          <img src="./img/sun.png" alt="" id="theme-icon" />
+        </button>
       </div>
-    </main>
+    </header>
+    <div class="hero">
+      <div class="hero-text">
+        <p class="intro">Рада приветствовать! </br>Я Мика и здесь:</p>
+        <h1>
+          Я создаю иллюстрации,<br />
+          где тишина - становится атмосферой,<br />персонажи живыми
+        </h1>
+        <a
+          href="https://t.me/q_AshA_p"
+          class="btn btn-primary btn-mod"
+          target="_blank"
+          >Заказать рисунок</a
+        >
+      </div>
+      <div class="hero-image">
+        <img src="./img/picture.jpg" alt="Mika Adamson" />
+      </div>
+    </div>
 
     <!--Second -->
     <section class="services">
@@ -82,7 +81,7 @@
 
         <div class="service-card">
           <a href="./price.html">
-            <img src="img/overview .jpg" alt="overview" />
+            <img src="img/oform/oform3.webp" alt="overview" />
             <h3>Оформление</h3>
           </a>
         </div>
@@ -92,7 +91,7 @@
     <!--work -->
     <section class="work">
       <p class="section-tag section-tag-work">Галерея</p>
-      <h2>Мое портфолио</h2>
+
       <div class="work-grid">
         <div class="work-item">
           <a href="./gallery.html"
@@ -164,7 +163,6 @@
       <div class="testimonials">
         <div class="testimonials-header">
           <p class="section-tag section-tag-footer">Отзывы</p>
-          <h2>Что говорят заказчики</h2>
         </div>
 
         <div class="testimonial-container">
@@ -175,8 +173,7 @@
               <img src="./img/picture/1.webp" alt="Фото клиента" />
             </div>
             <div class="testimonial_comment">
-              Очень красивый рисунок, нарисованый с душой. Обязательно в будущем
-              попрошу еще рисунок
+              Получилось еще лучше чем могла себе представить
               <div class="author">мелодия фокс</div>
             </div>
           </div>
@@ -186,7 +183,8 @@
               <img src="./img/picture/2.webp" alt="Фото клиента" />
             </div>
             <div class="testimonial_comment">
-              У тебя очень красивые рисунки, обязательно закажу еще
+              Очень красивый рисунок, нарисованый с душой. Обязательно в будущем
+              попрошу еще рисунок
               <div class="author">мелодия фокс</div>
             </div>
           </div>
@@ -196,7 +194,7 @@
               <img src="./img/picture/3.webp" alt="Фото клиента" />
             </div>
             <div class="testimonial_comment">
-             Посмотрите какой классный рисунок нарисовали, я до сих пор любуюсь им
+              Нарисовано красиво, не ожидала такой рисунок. Довольная рисунком
               <div class="author">мелодия фокс</div>
             </div>
           </div>
@@ -227,8 +225,7 @@
       </section>
     </footer>
     <script src="./js/home.js"></script>
+    <script src="./js/dark.js"></script>
   </body>
 </html>
 `
-
-
