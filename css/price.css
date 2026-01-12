@@ -32,7 +32,7 @@
   display: inline-block;
 }
 .url {
-  font-size: 72px;
+  font-size: 52px;
   color: var(--bg-color-text-price);
 }
 
@@ -44,9 +44,9 @@
 }
 
 .subtitle {
-  font-size: 36px;
+  font-size: 30px;
   text-indent: 30px;
-  line-height: 1.5;
+
   margin-bottom: 5px;
   color: --body-color-text;
   text-align: justify;
@@ -55,7 +55,7 @@ p > span {
   color: red;
 }
 .subtitle-mod {
-  font-size: 50px;
+  font-size: 46px;
 }
 /* Основной блок слева-справа */
 .price-block {

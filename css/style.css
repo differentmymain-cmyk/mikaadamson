@@ -41,12 +41,12 @@ body {
 
 /* BUTTONS */
 .btn {
-  width: 300px;
+  width: 200px;
   border: none;
   border-radius: 30px;
   padding: 14px 36px;
   margin: 10px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -74,7 +74,7 @@ body {
   font-weight: 500;
   margin-bottom: 24px;
   letter-spacing: 1px;
-  font-size: 72px;
+  font-size: 52px;
 }
 a {
   cursor: pointer;
@@ -144,7 +144,7 @@ a {
   margin: 50px 0;
 }
 .freelance-text {
-  font-size: 42px;
+  font-size: 32px;
 }
 .footer {
   height: 100%;

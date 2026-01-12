@@ -195,11 +195,21 @@ h1 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 .about-text {
-  font-size: 62px;
+  font-size: 52px;
 }
 .section-tag-about {
   background: var(--border-aboutimage);
   color: var(--body-color-text);
+}
+.about-text-bg {
+  text-align: justify;
+  text-indent: 40px;
+}
+.about-text-bg-mod {
+  background: rgba(35, 27, 31, 0.3);
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
 }
 /* ---- TESTIMONIALS ---- */
 
